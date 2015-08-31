@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.jreddit.entity.Submission;
@@ -42,9 +43,18 @@ public class SubmissionAdapter extends ArrayAdapter {
         postScore=(TextView)rowView
                 .findViewById(R.id.post_score);
 
+
+
+        ImageView postImage;
+        postImage = (ImageView)rowView
+                .findViewById(R.id.post_thumbnail);
+
+
+
         postTitle.setText(s.get(position).getTitle());
         postDetails.setText(s.get(position).getSubreddit());
         postScore.setText(s.get(position).getScore().toString());
+
 
         return rowView;
     }

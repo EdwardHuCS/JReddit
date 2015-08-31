@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 
+
 import com.github.jreddit.entity.Submission;
 import com.github.jreddit.entity.User;
 import com.github.jreddit.retrieval.Submissions;
@@ -54,6 +55,7 @@ public class ListViewFragment extends Fragment{
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
     }
+
 
     public void onActivityCreated(Bundle savedInstanceState)
     {

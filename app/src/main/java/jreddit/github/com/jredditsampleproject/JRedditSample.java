@@ -5,8 +5,9 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.view.View;
 import android.widget.ListView;
-
+import android.widget.Toast;
 
 
 public class JRedditSample extends FragmentActivity {
@@ -21,6 +22,11 @@ public class JRedditSample extends FragmentActivity {
                 .commit();
     }
 
+    public void refresh (View v)
+    {
+        Toast.makeText(getBaseContext(), "refresh", Toast.LENGTH_LONG).show();
+
+    }
 
 
 
